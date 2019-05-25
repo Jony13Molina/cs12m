@@ -1,0 +1,27 @@
+=======================================
+Joanthan Molina
+Lab 5 CS12M
+=======================================
+---------------------------------------
+README File:
+---------------------------------------
+
+---------------------------------------
+      Table of Contents           
+---------------------------------------
+1)README
+2)Dictionary.c
+3)Makefile
+4)Dictionary.h
+6)DictionaryTest.c
+7)DictionaryClient.c
+
+
+---------------------------------------
+Special Notes 
+---------------------------------------
+to compile in unix run the command
+make. Then type DictionaryClient. 
+The make file runs and compiles
+DictionaryClient and Dictionary.c
+

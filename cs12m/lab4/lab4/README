@@ -1,0 +1,26 @@
+==========================================
+README file:
+Jonathan Molina
+Lab4 CS12M
+jomolina
+==========================================
+
+
+------------------------------------------
+Contents:
+------------------------------------------
+1.Makefile
+2.charType.c
+3.README
+
+
+------------------------------------------
+Special Notes:
+------------------------------------------
+to compile program just use the makefile
+then to run it, do charType in out.
+This will create an out file which is 
+where the output will be generated.
+to access that file in the unix time
+share do, vi out. 
+

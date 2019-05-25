@@ -1,0 +1,29 @@
+============================
+/*Jonathan Molina
+/*CS12M Lab3 
+===========================
+
+=======================================
+README File:
+=======================================
+
+===================================
+      Table of Contents           
+===================================
+1)README
+2)FileReverse.c
+3)Makefile
+
+
+
+
+===============================
+Special Notes 
+===============================
+to compile do as usual make, 
+then to run the program 
+do FileReverse in out
+then do vi out to check the output.
+the program creates a new file
+called out which is where the output
+is at.  

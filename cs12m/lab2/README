@@ -1,0 +1,37 @@
+//===========================//
+//Jonathan Molina            //
+//CS12M                      //
+//lab2                       //
+//jomolina                   //
+//==========================//
+
+
+
+======================================
+Table of Contents 
+
+=====================================
+1)FileReverse.java: the program
+2)MakeFile compiles and runs program
+3)README
+====================================
+
+====================================
+Special Notes
+====================================
+Compile and run the program by typing
+make.
+Then type FileReverse in out
+This program produces a file
+so check the file out to see the output
+of this program.
+
+
+
+
+
+
+
+
+
+
