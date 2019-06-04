@@ -1,25 +1,23 @@
-#Makefile with macros 
+#-----------------------------------------------------------------------------
+# with macros
+#------------------------------------------------------------------------------
 
-JAVASRC		= HelloUser.java HelloUser2.java 
-SOURCES		= README Makefile $(JAVASRC)
-MAINCLASS	= HelloUser2
-CLASSES		= HelloUser.class HelloUser2.class
-JARFILE		= PutoElQueLeaEsto
-SUBMIT		= submit cmps012b-pt.s15 lab1
+FLAGS   = -std=c99 -Wall
+SOURCES = Dictionary.c DictionaryClient.c
+OBJECTS = Dictionary.o DictionaryClient.o
+HEADERS = Dictionary.h
+EXEBIN  = DictionaryClient
 
-all: $(JARFILE)
+all: $(EXEBIN)
 
-$(JARFILE): $(CLASSES)
-	echo Main-class: $(MAINCLASS) > Manifest
-	jar  cvfm $(JARFILE) Manifest $(CLASSES)
-	rm Manifest
-	chmod +x $(JARFILE)
+$(EXEBIN) : $(OBJECTS) $(HEADERS)
+	gcc -o $(EXEBIN) $(OBJECTS)
 
-$(CLASSES): $(JAVASRC)
-	javac -Xlint $(JAVASRC)
+$(OBJECTS) : $(SOURCES) $(HEADERS)
+	gcc -c $(FLAGS) $(SOURCES)
 
-clean:
-	rm $(CLASSES) $(JARFILE)
+clean :
+	rm -f $(EXEBIN) $(OBJECTS)
 
-submit: $(SOURCES)
-	$(SUBMIT) $(SOURCES)
+check:
+	valgrind --leak-check=full $(EXEBIN) 
