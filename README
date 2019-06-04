@@ -1,26 +1,29 @@
-/*==================================*/
-/*Jonathan Molina                   */
-/*jomolina                          */
-/*==================================*/
+============================
+/*Jonathan Molina
+/*CS12M Lab3 
+===========================
+
+=======================================
+README File:
+=======================================
+
+===================================
+      Table of Contents           
+===================================
+1)README
+2)FileReverse.c
+3)Makefile
 
 
-/*=====================================*/ 
-/* Indicates All Contents in lab1      */
-/*=====================================*/
 
-//===============Contents==============//
 
-HelloUser.java : This Is a program prints a greeting 
-HelloUser2.java: This is a program that prints a different greeting 
-README         : is just the read me file indicates or describes all the files that should be submitted.
-Makefile       : This is a jar file that compiles and executes the HelloUser2 program.
-/*=====================================*/ 
-/* Special Notes                       */ 
-/*=====================================*/
-
-//========How To Run The Programs=======//
-
-Just compile as usual.
-The programs do not require user input. 
-Once compile is done the programs should be executed. 
-
+===============================
+Special Notes 
+===============================
+to compile do as usual make, 
+then to run the program 
+do FileReverse in out
+then do vi out to check the output.
+the program creates a new file
+called out which is where the output
+is at.  

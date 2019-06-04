@@ -1,25 +1,20 @@
-#Makefile with macros 
+#==========================#
+#Makefile with Macros      #
+#==========================#
 
-JAVASRC		= HelloUser.java HelloUser2.java 
-SOURCES		= README Makefile $(JAVASRC)
-MAINCLASS	= HelloUser2
-CLASSES		= HelloUser.class HelloUser2.class
-JARFILE		= PutoElQueLeaEsto
-SUBMIT		= submit cmps012b-pt.s15 lab1
+FLAGS		= -std=c99 -Wall
+SOURCES		= FileReverse.c
+OBJECTS		= FileReverse.o
+EXEBIN		= FileReverse
 
-all: $(JARFILE)
 
-$(JARFILE): $(CLASSES)
-	echo Main-class: $(MAINCLASS) > Manifest
-	jar  cvfm $(JARFILE) Manifest $(CLASSES)
-	rm Manifest
-	chmod +x $(JARFILE)
+all: $(EXEBIN)
 
-$(CLASSES): $(JAVASRC)
-	javac -Xlint $(JAVASRC)
+$(EXEBIN) : $(OBJECTS)
+	gcc -o $(EXEBIN) $(OBJECTS)
+
+$(OBJECTS): $(SOURCES)
+	gcc -c $(FLAGS) $(SOURCES)
 
 clean:
-	rm $(CLASSES) $(JARFILE)
-
-submit: $(SOURCES)
-	$(SUBMIT) $(SOURCES)
+	rm -f (EXEBIN) $(OBJECTS)
