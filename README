@@ -1,26 +1,26 @@
-/*==================================*/
-/*Jonathan Molina                   */
-/*jomolina                          */
-/*==================================*/
+==========================================
+README file:
+Jonathan Molina
+Lab4 CS12M
+jomolina
+==========================================
 
 
-/*=====================================*/ 
-/* Indicates All Contents in lab1      */
-/*=====================================*/
+------------------------------------------
+Contents:
+------------------------------------------
+1.Makefile
+2.charType.c
+3.README
 
-//===============Contents==============//
 
-HelloUser.java : This Is a program prints a greeting 
-HelloUser2.java: This is a program that prints a different greeting 
-README         : is just the read me file indicates or describes all the files that should be submitted.
-Makefile       : This is a jar file that compiles and executes the HelloUser2 program.
-/*=====================================*/ 
-/* Special Notes                       */ 
-/*=====================================*/
-
-//========How To Run The Programs=======//
-
-Just compile as usual.
-The programs do not require user input. 
-Once compile is done the programs should be executed. 
+------------------------------------------
+Special Notes:
+------------------------------------------
+to compile program just use the makefile
+then to run it, do charType in out.
+This will create an out file which is 
+where the output will be generated.
+to access that file in the unix time
+share do, vi out. 
 

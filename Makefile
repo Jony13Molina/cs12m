@@ -1,25 +1,20 @@
-#Makefile with macros 
+#------------------------------------------------------------------------------
+#alphaNum.c with Macros
+#------------------------------------------------------------------------------
 
-JAVASRC		= HelloUser.java HelloUser2.java 
-SOURCES		= README Makefile $(JAVASRC)
-MAINCLASS	= HelloUser2
-CLASSES		= HelloUser.class HelloUser2.class
-JARFILE		= PutoElQueLeaEsto
-SUBMIT		= submit cmps012b-pt.s15 lab1
+FLAGS = -std=c99 -Wall
+SOURCES = charType.c
+OBJECTS = charType.o
+EXEBIN =  charType
 
-all: $(JARFILE)
+all: $(EXEBIN)
 
-$(JARFILE): $(CLASSES)
-	echo Main-class: $(MAINCLASS) > Manifest
-	jar  cvfm $(JARFILE) Manifest $(CLASSES)
-	rm Manifest
-	chmod +x $(JARFILE)
+$(EXEBIN) : $(OBJECTS)
+	gcc -o $(EXEBIN) $(OBJECTS)
 
-$(CLASSES): $(JAVASRC)
-	javac -Xlint $(JAVASRC)
+$(OBJECTS) : $(SOURCES)
+	gcc -c $(FLAGS) $(SOURCES)
 
-clean:
-	rm $(CLASSES) $(JARFILE)
+clean :
+	rm $(EXEBIN) $(OBJECTS)
 
-submit: $(SOURCES)
-	$(SUBMIT) $(SOURCES)
