@@ -1,26 +1,24 @@
-/*==================================*/
-/*Jonathan Molina                   */
-/*jomolina                          */
-/*==================================*/
+==================================================================
+Jonathan Molina 
+Lab6 CS12B
+jomolina
+README file
+==================================================================
 
 
-/*=====================================*/ 
-/* Indicates All Contents in lab1      */
-/*=====================================*/
+------------------------------------------------------------------
+Contents:
+------------------------------------------------------------------
+1)Makefile
+2)README
+3)LisTest.java
+4)List.java
+5)ListClient.java
+6)ListInterface.java
+7)ListIndexOutOfBounds
 
-//===============Contents==============//
-
-HelloUser.java : This Is a program prints a greeting 
-HelloUser2.java: This is a program that prints a different greeting 
-README         : is just the read me file indicates or describes all the files that should be submitted.
-Makefile       : This is a jar file that compiles and executes the HelloUser2 program.
-/*=====================================*/ 
-/* Special Notes                       */ 
-/*=====================================*/
-
-//========How To Run The Programs=======//
-
-Just compile as usual.
-The programs do not require user input. 
-Once compile is done the programs should be executed. 
-
+------------------------------------------------------------------
+Special Notes
+------------------------------------------------------------------
+just compile using makefile and run program with commad 
+ListClient
